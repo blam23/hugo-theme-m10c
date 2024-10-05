@@ -13,7 +13,12 @@ body {
   color: $light-color;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: $lightest-color;
 }
 
@@ -32,7 +37,7 @@ a {
 // small inline code-blocks in the middle of normal text (mainly because of
 // the very noticeable difference in x-height). This CSS corrects that problem.
 code {
-  font-family: monospace,monospace;
+  font-family: monospace, monospace;
   font-size: 1em;
   color: rgba($light-color, .8);
 
@@ -60,6 +65,19 @@ pre {
 ::selection {
   background: rgba($light-color, .25);
 }
+
 ::-moz-selection {
   background: rgba($light-color, .25);
+}
+
+figcaption {
+  font-style: italic;
+  padding: 0px 5px 5px 5px;
+  color: $light-color;
+}
+
+figure {
+  text-align: center;
+  background-color: $darkest-color;
+  border: solid 3px $darkest-color;
 }
